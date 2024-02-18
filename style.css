@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('IMAGEM/Background.png');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+#formContainer {
+    width: 50%;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 20px 0;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+label {
+    display: block;
+    padding: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+input[type="radio"]:checked + label {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#buttonContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+#error {
+    color: red;
+    font-weight: bold;
+}
+
+#thanksMessage {
+    font-size: 2em;
+    text-align: center;
+    border: 2px solid green;
+    padding: 20px;
+    background-color: white;
+}
+
+@media (max-width: 600px) {
+    body {
+        font-size: 18px;
+    }
+    #formContainer {
+        width: 80%;
+    }
+}
